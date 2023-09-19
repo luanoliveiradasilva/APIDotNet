@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj": {}
+    "D:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj": {}
   },
   "projects": {
-    "d:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj": {
+    "D:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj",
+        "projectUniqueName": "D:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj",
         "projectName": "app",
-        "projectPath": "d:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj",
+        "projectPath": "D:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj",
         "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-        "outputPath": "d:\\Documents\\Projetos\\APIDotNet\\src\\obj\\",
+        "outputPath": "D:\\Documents\\Projetos\\APIDotNet\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config"
