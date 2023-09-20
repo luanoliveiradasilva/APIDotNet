@@ -4,7 +4,7 @@ using src.app.Domains.Entities;
 
 namespace src.app.Data.Mapping
 {
-    public class UserMapping/* : IEntityTypeConfiguration<User> */
+    public class UserMapping : IEntityTypeConfiguration<User>
 
     {
         public void Configure(EntityTypeBuilder<User> builder)

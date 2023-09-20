@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aWop6mAgmxN9VtsIqB1gu5vR6nUPcGohCTlRsNg7suHZ5+pxZABXg9GEX34R8SKo4S3MorXeAwyUgPpGMmjxpw==",
+  "dgSpecHash": "07/dFEAUpeCIc47tRFvIviQC+RmtbguEuK2I3DFuzQ4t6+s29UTXBLF7f5uZLdUZFmxqEGSLNtwJYpuT/B6+Xg==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj",
+  "projectFilePath": "d:\\Documents\\Projetos\\APIDotNet\\src\\app.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luann\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\luann\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",

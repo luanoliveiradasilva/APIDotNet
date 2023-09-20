@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using src.app.Data.Context;
 using src.app.Domains.Entities;
-using src.app.Domains.Interface;
+using src.app.Data.Interface;
 
 namespace src.app.Data.Repository
 {
@@ -27,7 +27,6 @@ namespace src.app.Data.Repository
 
                 if (result == null)
                     return false;
-
 
                 dataSet.Remove(result);
 

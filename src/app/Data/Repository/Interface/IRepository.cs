@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using src.app.Domains.Entities;
 
-namespace src.app.Domains.Interface
+namespace src.app.Data.Interface
 {
     public interface IRepository<T> where T : BaseEntity
     {
