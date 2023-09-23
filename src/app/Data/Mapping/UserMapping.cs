@@ -1,24 +1,23 @@
+using Domains.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using src.app.Domains.Entities;
 
-namespace src.app.Data.Mapping
+namespace Data.Mapping;
+
+public class UserMapping : IEntityTypeConfiguration<User>
+
 {
-    public class UserMapping : IEntityTypeConfiguration<User>
-
+    public void Configure(EntityTypeBuilder<User> builder)
     {
-        public void Configure(EntityTypeBuilder<User> builder)
-        {
 
-            builder.ToTable("User");
+        builder.ToTable("Users");
 
-            builder.HasKey(user => user.Id);
+        builder.HasKey(user => user.Id);
 
-            builder.HasIndex(user => user.Email).IsUnique();
+        builder.HasIndex(user => user.Email).IsUnique();
 
-            builder.Property(user => user.Name).IsRequired().HasMaxLength(60);
+        builder.Property(user => user.Name).IsRequired().HasMaxLength(60);
 
-            builder.Property(user => user.Email).HasMaxLength(100);
-        }
+        builder.Property(user => user.Email).HasMaxLength(100);
     }
 }

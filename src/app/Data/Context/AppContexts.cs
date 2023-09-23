@@ -1,23 +1,20 @@
+using Data.Mapping;
+using Domains.Models;
 using Microsoft.EntityFrameworkCore;
-using src.app.Data.Mapping;
-using src.app.Domains.Entities;
 
-namespace src.app.Data.Context
+namespace Data.Context;
+public class AppContexts : DbContext
 {
-    public class AppContexts : DbContext
+    public AppContexts(DbContextOptions<AppContexts> options) : base(options) { }
+
+
+    public DbSet<User> Users { get; set; }
+
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        public AppContexts(DbContextOptions<AppContexts> options) : base(options) { }
+        base.OnModelCreating(modelBuilder);
 
-
-        public DbSet<User> Users { get; set; }
-
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<User>(new UserMapping().Configure);
-        }
+        modelBuilder.Entity<User>(new UserMapping().Configure);
     }
-
 }

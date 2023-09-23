@@ -1,13 +1,11 @@
-using src.app.Domains.Entities;
+using Domains.Models;
 
-namespace src.app.Services.Interface
+namespace Services.Interface;
+public interface IUserServices
 {
-    public interface IUserServices
-    {
-        Task<User> Get(Guid id);
-        Task<IEnumerable<User>> GetAll();
-        Task<User> Post (User user);
-        Task<User> Put(User user);
-        Task<bool> Delete(Guid id);        
-    }
+    Task<User> Get(Guid id);
+    Task<IEnumerable<User>> GetAll();
+    Task<User> Post(User user);
+    Task<User> Put(User user);
+    Task<bool> Delete(Guid id);
 }
